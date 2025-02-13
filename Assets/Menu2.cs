@@ -11,7 +11,7 @@ public class XRDeleteAndDisplay : MonoBehaviour
 
     private bool isDeleting = false;
 
-    void Start()
+    public void Start()
     {
         // Optionally, start the deletion process after a delay or on a certain trigger.
         StartCoroutine(DeleteObjectsGradually());
@@ -46,7 +46,7 @@ public class XRDeleteAndDisplay : MonoBehaviour
         SimulateCriticalFailure();
     }
 
-    void DeleteRandomGameObject()
+    public void DeleteRandomGameObject()
     {
         // Get all the GameObjects in the scene (excluding some base important ones)
         GameObject[] allObjects = FindObjectsOfType<GameObject>();
@@ -70,7 +70,7 @@ public class XRDeleteAndDisplay : MonoBehaviour
         }
     }
 
-    void CreateTextMeshPro(string objectName)
+    public void CreateTextMeshPro(string objectName)
     {
         // Create a new GameObject to hold the TextMeshPro component
         GameObject textObject = new GameObject("DeletedObjectName");
@@ -91,8 +91,10 @@ public class XRDeleteAndDisplay : MonoBehaviour
         Destroy(textObject, displayDuration);
     }
 
-    void SimulateCriticalFailure()
+    public void SimulateCriticalFailure()
     {
+
+        CreateTextMeshPro("Critical Failure: Too many components removed, application is unstable!");
         // Display a critical failure message or simulate application crash
         Debug.LogError("Critical Failure: Too many components removed, application is unstable!");
 
