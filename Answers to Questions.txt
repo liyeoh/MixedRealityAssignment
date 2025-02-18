@@ -1,0 +1,21 @@
+1a) What does the AR Plane Manager do?
+
+The AR Plane Manager helps your device understand flat surfaces in the real world, like tables or floors.
+
+1b) Why do we need it?
+
+We need it so that we can place virtual objects on these surfaces in a way that looks real.
+
+1c) What does it let us do?
+
+It lets us put virtual things, like a piano or a bench, on real surfaces so they look like they are actually there.
+
+2) What does each object demonstrate you can spawn demonstrate?
+
+Sphere: A ball could show how gravity and movement work.
+Chair: Shows how furniture can be placed in a room to see how it fits.
+Avatar: A character might show how animations and interactions happen in AR.
+
+3) Each of the objects you can spawn have several "Affordances" what do they do?
+
+"Affordances" are things an object can do or how you can interact with it. For example: A door can open and close. A button can be pressed. A lever can be pulled. These help make AR objects feel more real and useful.
